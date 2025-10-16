@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import rules from "./rules-2025-06-25.json";
 
 const randomInt = (min = 0, max = 10) => Math.floor(Math.random() * max) + min;
@@ -24,7 +24,7 @@ type Question = {
 const generateRandomQuestions = () => {
   const qs: Question[] = [];
   const visited: string[] = [];
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 10; i++) {
     console.log("i", i);
     const ruleIdx = randomInt(0, rules.rules.length - 1);
     const { subrules } = rules.rules[ruleIdx];
@@ -37,6 +37,7 @@ const generateRandomQuestions = () => {
     visited.push(`${ruleIdx}:${subruleIdx}`);
 
     const switchWords = [
+      "arms",
       "legs",
       "turn",
       "start",
@@ -80,16 +81,18 @@ const generateRandomQuestions = () => {
 };
 
 const getInputValue = (e: any, i: number) =>
-  e.target[i] instanceof HTMLInputElement ? e.target[i].value : "";
+  e.target[i] instanceof HTMLInputElement
+    ? e.target[i].value.trim() || "..."
+    : "";
 
 const caseInsensCheck = (target: string, input: string) =>
   new RegExp(target, "i").test(input);
 
 const getCheckedContent = (sub: string | undefined, value: string) =>
   sub
-    ? `<span style="color: ${
+    ? `<span style="--color: ${
         caseInsensCheck(sub, value) ? "green" : "red"
-      }">${value}</span>`
+      }; border: 1px solid var(--color); color: var(--color); padding: 5px 5px 8px 5px; border-radius: 5px;">${value}</span>`
     : "";
 
 const replaceInputsWithText = ({
@@ -120,23 +123,40 @@ const isCorrect = (subs: { word: string }[], e: any) => {
   return true;
 };
 
-export const Quiz = () => {
+export const Quiz = ({
+  finish,
+}: {
+  finish: (opts: { correct: number; total: number }) => void;
+}) => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const [questions, setQuestions] = useState(() => generateRandomQuestions());
   const [currentQ, setCurrentQ] = useState(0);
-  const [currentState, setCurrentState] = useState("INPUTTING");
+  const [currentState, setCurrentState] = useState<"INPUTTING" | "CHECKING">(
+    "INPUTTING"
+  );
   const { ruleTitle, subruleNum, questionContent, subs } = questions[currentQ];
   const [content, setContent] = useState(questionContent);
+
+  useLayoutEffect(() => {
+    if (currentState === "INPUTTING") {
+      document.querySelector("input")?.focus();
+    }
+  }, [currentState]);
 
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        marginTop: "25%",
+        maxWidth: "800px",
       }}
     >
+      <div style={{ fontSize: "0.6em" }}>
+        QUESTION {currentQ + 1}/{questions.length}
+      </div>
       <div style={{ fontWeight: "bold" }}>
-        {subruleNum} {ruleTitle}
+        Rule {subruleNum} {ruleTitle}
       </div>
       <form
         onSubmit={(e) => {
@@ -152,6 +172,15 @@ export const Quiz = () => {
             });
             setContent(replaceInputsWithText({ subs, e, questionContent }));
             setCurrentState("CHECKING");
+            buttonRef.current?.focus();
+          } else if (currentQ === questions.length - 1) {
+            finish({
+              correct: questions.reduce(
+                (acc, q) => acc + (q.correct ? 1 : 0),
+                0
+              ),
+              total: questions.length,
+            });
           } else {
             setCurrentState("INPUTTING");
             setCurrentQ((n) => n + 1);
@@ -159,15 +188,18 @@ export const Quiz = () => {
           }
         }}
       >
-        <style>{`input { border: 1px solid #ccc; padding: 8px; border-radius: 5px }`}</style>
+        <style>{`input { border: 1px solid #ccc; padding: 8px; border-radius: 5px; width: 100px }`}</style>
         <div dangerouslySetInnerHTML={{ __html: content }} />
         <button
+          ref={buttonRef}
           type="submit"
           style={{
             maxWidth: "500px",
             width: "calc(100% - 32px)",
             position: "absolute",
             bottom: "64px",
+            left: "50%",
+            transform: "translateX(-50%)",
           }}
         >
           {currentState === "INPUTTING" ? "Check" : "Next"}
