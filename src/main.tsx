@@ -8,6 +8,7 @@ createRoot(document.getElementById("root")!).render(
     <style>{`#root { width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
   padding: 0 16px;
   font-size: 1.4em;
   }`}</style>

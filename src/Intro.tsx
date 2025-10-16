@@ -8,7 +8,7 @@ export const Intro = ({ startQuiz }: { startQuiz: () => void }) => {
         alignItems: "center",
       }}
     >
-      <h1>Swim Rules Quiz</h1>
+      <h1 style={{ textAlign: "center" }}>Swim Rules Quiz</h1>
       <p>
         <b>Competition Regulations Version 25 June 2025</b>
       </p>
