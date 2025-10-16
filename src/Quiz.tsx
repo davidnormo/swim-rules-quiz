@@ -148,7 +148,7 @@ export const Quiz = ({
       style={{
         display: "flex",
         flexDirection: "column",
-        marginTop: "25%",
+        marginTop: "25vh",
         maxWidth: "800px",
       }}
     >
