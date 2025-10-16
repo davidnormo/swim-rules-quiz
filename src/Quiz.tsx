@@ -88,12 +88,17 @@ const getInputValue = (e: any, i: number) =>
 const caseInsensCheck = (target: string, input: string) =>
   new RegExp(target, "i").test(input);
 
-const getCheckedContent = (sub: string | undefined, value: string) =>
-  sub
-    ? `<span style="--color: ${
-        caseInsensCheck(sub, value) ? "green" : "red"
-      }; border: 1px solid var(--color); color: var(--color); padding: 5px 5px 8px 5px; border-radius: 5px;">${value}</span>`
-    : "";
+const getCheckedContent = (sub: string | undefined, value: string) => {
+  if (!sub) return "";
+
+  const match = caseInsensCheck(sub, value);
+  const matchColor = match ? "green" : "red";
+  const matchDecor = match ? "normal" : "line-through";
+
+  return `<span style="color: ${matchColor};text-decoration: ${matchDecor};">${value}</span>${
+    !match ? ` <span style="color: green;">${sub}</span>` : ""
+  }`;
+};
 
 const replaceInputsWithText = ({
   subs,
