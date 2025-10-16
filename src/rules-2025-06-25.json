@@ -1,0 +1,222 @@
+{
+  "rules": [
+    {
+      "number": "4",
+      "title": "THE START",
+      "subrules": [
+        {
+          "number": "4.1",
+          "content": "The start in Freestyle, Breaststroke, Butterfly and Individual Medley races shall be with a dive. On the long whistle (Part Two, Article 2.1.5) from the referee the swimmers shall step onto the starting platform and remain there. On the starter's command \"take your marks\", they shall immediately take up a starting position with at least one foot at the front of the starting platforms. The position of the hands is not relevant. When all swimmers are stationary, the Starter shall give the starting signal."
+        },
+        {
+          "number": "4.2",
+          "content": "The start in the Backstroke and Medley Relay races shall be from the water. At the referee's first long whistle (Part Two, Article 2.1.5), the swimmers shall immediately enter the water. At the referee's second long whistle the swimmers shall return without undue delay to the starting position (Part Two, Article 6.1). When all swimmers have assumed their starting positions, the starter shall give the command \"take your marks\". When all swimmers are stationary, the starter shall give the starting signal."
+        },
+        {
+          "number": "4.3",
+          "content": "In Olympic Games, World Aquatics Championships and other World Aquatics events the command \"Take your marks\" shall be in English and the start shall be by multiple loudspeakers, mounted one at each starting platform."
+        },
+        {
+          "number": "4.4",
+          "content": "Any swimmer initiating a start before the signal may be disqualified. If the starting signal sounds before the disqualification is declared, the race shall continue and the swimmer or swimmers shall be disqualified upon completion of the race. If the disqualification is declared before the starting signal, the signal shall not be given, but the remaining swimmers shall be called back and start again. The referee repeats the starting procedure beginning with the long whistle (the second one for Backstroke) as per Part Two, Article 2.1.5."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "FREESTYLE",
+      "subrules": [
+        {
+          "number": "5.1",
+          "content": "Freestyle means that in an event so designated the swimmer may swim any style, except that in individual medley or medley relay events, freestyle means any style other than backstroke, breaststroke or butterfly."
+        },
+        {
+          "number": "5.2",
+          "content": "Some part of the swimmer must touch the wall upon completion of each length and at the finish."
+        },
+        {
+          "number": "5.3",
+          "content": "Some part of the swimmer must break the surface of the water throughout the race, except it shall be permissible for the swimmer to be completely submerged during the turn and for a distance of not more than 15 metres after the start and each turn. By that point, the head must have broken the surface."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "BACKSTROKE",
+      "subrules": [
+        {
+          "number": "6.1",
+          "content": "Prior to the starting signal, the swimmers shall line up in the water facing the starting end, with both hands holding the starting grips. Standing in or on the gutter or bending the toes over the lip of the gutter is prohibited. When using a backstroke ledge at the start, at least one toe of each foot must be in contact with the end wall or face of the touchpad. Bending the toes over the top of the touchpad is prohibited."
+        },
+        {
+          "number": "6.2",
+          "content": "At the signal for starting and after turning the swimmer shall push off and swim upon their back throughout the race except when executing a turn as set forth in Part Two, Article 6.4. The normal position on the back can include a roll movement of the body up to, but not including 90 degrees from horizontal. The position of the head is not relevant."
+        },
+        {
+          "number": "6.3",
+          "content": "Some part of the swimmer must break the surface of the water throughout the race, except that once some part of the head of the swimmer has passed the 5 metres mark immediately prior to reaching for the finish, the swimmer may be completely submerged. It is also permissible for the swimmer to be completely submerged during the turn, and for a distance of not more than 15 metres after the start and each turn. By that point the head must have broken the surface."
+        },
+        {
+          "number": "6.4",
+          "content": "When executing the turn there must be a touch of the wall with some part of the swimmer’s body. During the turn the shoulders may be turned over the vertical to the breast after which an immediate continuous single arm pull or immediate continuous simultaneous double arm pull may be used to initiate the turn. The swimmer must have returned to the position on the back upon leaving the wall."
+        },
+        {
+          "number": "6.5",
+          "content": "Upon the finish of the race the swimmer must touch the wall while on the back."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "BREASTSTROKE",
+      "subrules": [
+        {
+          "number": "7.1",
+          "content": "After the start and after each turn, the swimmer may take one arm stroke completely back to the legs during which the swimmer may be submerged. At any time prior to the first Breaststroke kick after the start and after each turn a single butterfly kick is permitted. The head must break the surface of the water before the hands turn inward at the widest part of the second stroke."
+        },
+        {
+          "number": "7.2",
+          "content": "From the beginning of the first arm stroke after the start and after each turn, the body shall be on the breast. It is not permitted to roll onto the back at any time except at the turn after the touch of the wall where it is permissible to turn in any manner as long as the body is on the breast when leaving the wall. From the start and throughout the race the stroke cycle must be one arm stroke and one leg kick in that order. All movements of the arms shall be simultaneous without alternating movement."
+        },
+        {
+          "number": "7.3",
+          "content": "The hands shall be pushed forward together from the breast on, under, or over the water. The elbows shall be under water except for the final stroke before the turn, during the turn and for the final stroke at the finish. The hands shall be brought back on or under the surface of the water. The hands shall not be brought back beyond the hip line, except during the first stroke after the start and each turn."
+        },
+        {
+          "number": "7.4",
+          "content": "During each complete cycle, some part of the swimmer’s head must break the surface of the water. All movements of the legs shall be simultaneous without alternating movement."
+        },
+        {
+          "number": "7.5",
+          "content": "The feet must be turned outwards during the propulsive part of the kick. Alternating movements or downward butterfly kicks are not permitted except as in Part Two, Article 7.1. Breaking the surface of the water with the feet is allowed unless followed by a downward butterfly kick."
+        },
+        {
+          "number": "7.6",
+          "content": "At each turn and at the finish of the race, the touch shall be made with both hands separated* and simultaneously at, above, or below the water level. At the last stroke before the turn and at the finish an arm stroke not followed by a leg kick is permitted. The head may be submerged after the last arm pull prior to the touch, provided it breaks the surface of the water at some point during the last complete or incomplete cycle preceding the touch. *”Separated” means that the hands cannot be stacked one on top of the other. It is not necessary to see space between the hands. Incidental contact at the fingers is not a concern."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "BUTTERFLY",
+      "subrules": [
+        {
+          "number": "8.1",
+          "content": "From the beginning of the first arm stroke after the start and each turn, the body shall be kept on the breast. It is not permitted to roll onto the back at any time, except at the turn after the touch of the wall where it is permissible to turn in any manner as long as the body is on the breast when leaving the wall."
+        },
+        {
+          "number": "8.2",
+          "content": "Both arms shall be brought forward simultaneously over the water and brought backward simultaneously under the water through-out the race, subject to Part Two, Article 8.5."
+        },
+        {
+          "number": "8.3",
+          "content": "All up and down movements of the legs must be simultaneous. The legs or the feet need not be on the same level, but they shall not alternate in relation to each other. A breaststroke kicking movement is not permitted."
+        },
+        {
+          "number": "8.4",
+          "content": "At each turn and at the finish of the race, the touch shall be made with both hands separated** and simultaneously, at, above or below the water surface."
+        },
+        {
+          "number": "8.5",
+          "content": "At the start and at turns, a swimmer is permitted one or more leg kicks and one arm pull under the water, which must bring him to the surface. It shall be permissible for a swimmer to be completely submerged for a distance of not more than 15 metres after the start and after each turn. By that point, the head must have broken the surface. The swimmer must remain on the surface until the next turn or finish. **”Separated” means that the hands cannot be stacked one on top of the other. It is not necessary to see space between the hands. Incidental contact at the fingers is not a concern."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "MEDLEY SWIMMING",
+      "subrules": [
+        {
+          "number": "9.1",
+          "content": "In individual medley events, the swimmer covers the four swimming strokes in the following order: Butterfly, Backstroke, Breaststroke and Freestyle. Each of the strokes must cover one quarter (1/4) of the distance."
+        },
+        {
+          "number": "9.2",
+          "content": "In Freestyle the swimmer must be on the breast except when executing a turn. The swimmer must return to the breast before any kick or stroke. Leaving the wall on the back during the freestyle portion is permissible but no kicking action is permitted until the swimmer has returned past the vertical to the breast at which point kicking, including a butterfly kick(s), may commence."
+        },
+        {
+          "number": "9.3",
+          "content": "In Medley relay events, swimmers will cover the four swimming strokes in the following order: Backstroke, Breaststroke, Butterfly and Freestyle. Each of the strokes must cover one quarter (1/4) of the distance."
+        },
+        {
+          "number": "9.4",
+          "content": "Each section must be finished in accordance with the rule which applies to the stroke concerned."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "THE RACE",
+      "subrules": [
+        {
+          "number": "10.1",
+          "content": "All individual races must be held as separate gender events."
+        },
+        {
+          "number": "10.2",
+          "content": "A swimmer swimming over the course alone shall cover the whole distance to qualify. A swimmer who does not complete the whole distance in accordance with the relevant World Aquatics rules shall be disqualified."
+        },
+        {
+          "number": "10.3",
+          "content": "On the pool deck, after respecting the presentation protocol outlined in Part Two, Article 1.5, the competitors must immediately remove all clothing except for swimwear."
+        },
+        {
+          "number": "10.4",
+          "content": "The swimmer must remain and finish the race in the same lane in which he/she started."
+        },
+        {
+          "number": "10.5",
+          "content": "In all events, a swimmer when turning shall make physical contact with the end of the pool or course. The turn must be made from the wall, and it is not permitted to take a stride or step from the bottom of the pool."
+        },
+        {
+          "number": "10.6",
+          "content": "Standing on the bottom during freestyle events or during the freestyle portion of medley events shall not disqualify a swimmer, but they shall not walk."
+        },
+        {
+          "number": "10.7",
+          "content": "Pulling on the lane rope is not allowed."
+        },
+        {
+          "number": "10.8",
+          "content": "Obstructing another swimmer by swimming across another lane or otherwise interfering shall disqualify the offender. Should the foul be intentional, the referee shall report the matter to the Member promoting the race, and to the Member of the swimmer so offending."
+        },
+        {
+          "number": "10.9",
+          "content": "Any swimmer not entered in a race, who enters the water in which an event is being conducted before all swimmers therein have completed the race, shall be disqualified from their next scheduled race in the meet."
+        },
+        {
+          "number": "10.10",
+          "content": "There shall be four swimmers on each relay team. Mixed relays may be swum. Mixed Relays must consist of two (2) Men and two (2) Women. Split times achieved in these events cannot be used for records and/or entry purposes."
+        },
+        {
+          "number": "10.11",
+          "content": "Relay exchanges must commence from the starting platform. Running starts from the pool deck are not permitted."
+        },
+        {
+          "number": "10.12",
+          "content": "In relay events, the team of a swimmer whose feet lose touch with the starting platform before the preceding team-mate touches the wall shall be disqualified."
+        },
+        {
+          "number": "10.13",
+          "content": "Any relay team shall be disqualified from a race if a team member, other than the swimmer designated to swim that length, enters the water when the race is being conducted, before all swimmers of all teams have finished the race."
+        },
+        {
+          "number": "10.14",
+          "content": "The members of a relay team and their order of competing must be nominated before the race. Any relay team member may compete in a race only once. The composition of a relay team may be changed between the heats and finals of an event, provided that it is made up from the list of swimmers properly entered by a member for that event. Failure to swim in the order listed will result in disqualification. Substitutions may be made only in the case of a documented medical emergency."
+        },
+        {
+          "number": "10.15",
+          "content": "Any swimmer having finished their race, or their distance in a relay event, must leave the pool as soon as possible without obstructing any other swimmer who has not yet finished their race. Otherwise, the swimmer committing the fault, or their relay team, shall be disqualified."
+        },
+        {
+          "number": "10.16",
+          "content": "Should a foul endanger the chance of success of a swimmer, the referee shall have the power to allow him to compete in the next heat or, should the foul occur in a final event or in the last heat, he/she may order it to be re- swum."
+        },
+        {
+          "number": "10.17",
+          "content": "No pace-making shall be permitted, nor may any device be used or plan adopted which has that effect."
+        }
+      ]
+    }
+  ]
+}
