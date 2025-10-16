@@ -145,6 +145,7 @@ export const Quiz = ({
 
   return (
     <div
+      id="quiz-root"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -188,7 +189,12 @@ export const Quiz = ({
           }
         }}
       >
-        <style>{`input { border: 1px solid #ccc; padding: 8px; border-radius: 5px; width: 100px }`}</style>
+        <style>{`
+        @media (max-width: 480px) {
+          #quiz-root { margin-top: 30px!important; }
+        }
+        input { border: 1px solid #ccc; padding: 8px; border-radius: 5px; width: 100px }
+        `}</style>
         <div dangerouslySetInnerHTML={{ __html: content }} />
         <button
           ref={buttonRef}
